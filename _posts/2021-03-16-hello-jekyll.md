@@ -5,6 +5,8 @@ title: Activity - Getting Started with Jekyll
 
 In this post, we'll get set up with [Jekyll](https://jekyllrb.com/). Jekyll is a *static site converter*, which you can use to turn plaintext documents into attractive webpages. 
 
+# Random Typing
+
 ## Pre-Work: Install Jekyll
 
 You should have already installed Jekyll when completing the activity in [this post]({{ site.baseurl }}/software)
