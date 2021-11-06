@@ -166,7 +166,7 @@ In this above equation,
 
 #### B.1 Compute The Cut Term
 
-The cut term $$\mathbf{cut}(C_0, C_1)$$ is the sum of the entries `A[i,j]` where `i` and `j` belong to different clusters.
+The cut term $$\mathbf{cut}(C_0, C_1)$$ is the sum of the entries $$\mathbf{A}$$`[i,j]` where `i` and `j` belong to different clusters.
 
 
 ```python
