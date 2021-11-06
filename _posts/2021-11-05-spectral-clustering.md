@@ -158,7 +158,7 @@ $$N_{\mathbf{A}}(C_0, C_1)\equiv \mathbf{cut}(C_0, C_1)\left(\frac{1}{\mathbf{vo
 
 In this above equation, 
 - $$C_0$$, $$C_1$$: two clusters of the data points (a data point is either in $$C_0$$ or $$C_1$$)
-- `y`: the label that specifies the cluster membership of each data point (e.g. `y[i] = 1` indicates point $${i \in C_0}$$, i.e. $i$th row of $$\mathbf{A}$$ belongs to $C_1$)
+- `y`: the label that specifies the cluster membership of each data point (e.g. `y[i] = 1` indicates point $${i \in C_0}$$, i.e. $i$th row of $$\mathbf{A}$$ belongs to $$C_1$$)
 - $$\mathbf{cut}(C_0, C_1) \equiv \sum_{i \in C_0, j \in C_1} a_{ij}$$: the *cut* of the clusters $$C_0$$ and $$C_1$$
 - $$\mathbf{vol}(C_0) \equiv \sum_{i \in C_0}d_i$$, where $$d_i = \sum_{j = 1}^n a_{ij}$$: the $$i$$th row sum of $$A$$
 
