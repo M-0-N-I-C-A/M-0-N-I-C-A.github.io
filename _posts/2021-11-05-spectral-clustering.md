@@ -3,19 +3,15 @@ layout: post
 title: Spectral Clustering
 ---
 
-
-
-# Blog Post: Spectral Clustering
-
 This blog post provides a tutorial on a simple version of the **spectral clustering** algorithm for clustering data points. In multivariate statistics, spectral clustering techniques make use of the spectrum (eigenvalues) of the similarity matrix of the data to perform dimensionality reduction before clustering in fewer dimensions. 
 
 ### Notation (inherited from the sample jupyter notebook)
 
 In all the math below: 
 
-- Boldface capital letters like $\mathbf{A}$ refer to matrices (2d arrays of numbers). 
-- Boldface lowercase letters like $\mathbf{v}$ refer to vectors (1d arrays of numbers). 
-- $\mathbf{A}\mathbf{B}$ refers to a matrix-matrix product (`A@B`). $\mathbf{A}\mathbf{v}$ refers to a matrix-vector product (`A@v`). 
+- Boldface capital letters like $$\mathbf{A}$$ refer to matrices (2d arrays of numbers). 
+- Boldface lowercase letters like $$\mathbf{v}$$ refer to vectors (1d arrays of numbers). 
+- $$\mathbf{A}\mathbf{B}$$ refers to a matrix-matrix product (`A@B`). $$\mathbf{A}\mathbf{v}$$ refers to a matrix-vector product (`A@v`). 
 
 **Cluster analysis** or **clustering** is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters).
 
