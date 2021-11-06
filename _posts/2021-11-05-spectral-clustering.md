@@ -113,7 +113,7 @@ $$\mathbf{A}$$: the similarity matrix $$\mathbf{A}$$ (2d `np.ndarray`) with `n` 
 
 `n`: the number of data points
 
-`epsilon`: the distance parameter (`A[i,j]` is `1` if `X[i]` is within `epsilon` of `X[j]`, and `0` otherwise)
+`epsilon`: the distance parameter ($$\mathbf{A}$$`[i,j]` is `1` if `X[i]` is within `epsilon` of `X[j]`, and `0` otherwise)
 
 
 
@@ -240,6 +240,7 @@ print(normcut_rand)
 
     0.011518412331615225
     1.0240023597759158
+
 
 
 ### Part C: Math Trick
@@ -371,6 +372,7 @@ z_ = scipy.optimize.minimize(orth_obj,z,method='nelder-mead')
 ```python
 z_min = z_.x
 ```
+
 
 ### Part E: Cluster the Data
 
@@ -577,6 +579,8 @@ plt.savefig("image-109.png")
 
 
 As we can see from the plot above, our spectral clustering function still manages to find the two half-moon clusters. However, as the niose level increases, the number of points mis-clustered also start to increase and our function does not perform as well as at low noise levels.
+
+
 
 ### Part I: Other Datasets - the bull's eye
 
