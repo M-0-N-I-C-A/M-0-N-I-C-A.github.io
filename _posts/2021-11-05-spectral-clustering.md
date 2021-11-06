@@ -11,7 +11,7 @@ In all the math below:
 
 - Boldface capital letters like $$\mathbf{A}$$ refer to matrices (2d arrays of numbers). 
 - Boldface lowercase letters like $$\mathbf{v}$$ refer to vectors (1d arrays of numbers). 
-- $$\mathbf{A}\mathbf{B}$$ refers to a matrix-matrix product (`A@B`). $$\mathbf{A}\mathbf{v}$$ refers to a matrix-vector product (`A@v`). 
+- $$\mathbf{A}\mathbf{B}$$ refers to a matrix-matrix product ($$`A@B`$$). $$\mathbf{A}\mathbf{v}$$ refers to a matrix-vector product ($$`A@v`$$). 
 
 **Cluster analysis** or **clustering** is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters).
 
@@ -109,7 +109,7 @@ The above example provides us with motivation to use spectral clustering to clus
 
 ### Part A: Construct the Similarity Matrix A
 
-$\mathbf{A}$: the similarity matrix $\mathbf{A}$ (2d `np.ndarray`) with `n` rows and `n` columns and whose diagonal entries are all zeros
+$$\mathbf{A}$$: the similarity matrix $$\mathbf{A}$$ (2d `np.ndarray`) with `n` rows and `n` columns and whose diagonal entries are all zeros
 
 `n`: the number of data points
 
@@ -150,24 +150,23 @@ A
 
 ### Part B: Calculate the Binary Norm Cut Objective of Matrix A
 
-Now since matrix $\mathbf{A}$ contains distance information of the data points, the problem of clustering the data points is transferred to the problem of partitioning the rows and columns of matrix $\mathbf{A}$.
+Now since matrix $$\mathbf{A}$$ contains distance information of the data points, the problem of clustering the data points is transferred to the problem of partitioning the rows and columns of matrix $$\mathbf{A}$$.
 
-The **binary norm cut objective** of a matrix $\mathbf{A}$ is the function 
+The **binary norm cut objective** of a matrix $$\mathbf{A}$$ is the function 
 
 $$N_{\mathbf{A}}(C_0, C_1)\equiv \mathbf{cut}(C_0, C_1)\left(\frac{1}{\mathbf{vol}(C_0)} + \frac{1}{\mathbf{vol}(C_1)}\right)\;$$
 
 In this above equation, 
-- $C_0$, $C_1$: two clusters of the data points (a data point is either in $C_0$ or $C_1$)
-- `y`: the label that specifies the cluster membership of each data point (e.g. `y[i] = 1` indicates point ${i \in C_0}$, i.e. $i$th row of $\mathbf{A}$ belongs to $C_1$)
-- $\mathbf{cut}(C_0, C_1) \equiv \sum_{i \in C_0, j \in C_1} a_{ij}$: the *cut* of the clusters $C_0$ and $C_1$
-- $\mathbf{vol}(C_0) \equiv \sum_{i \in C_0}d_i$, where $d_i = \sum_{j = 1}^n a_{ij}$: the $i$th row sum of $A$ 
+- $$C_0$$, $$C_1$$: two clusters of the data points (a data point is either in $$C_0$$ or $$C_1$$)
+- `y`: the label that specifies the cluster membership of each data point (e.g. `y[i] = 1` indicates point $${i \in C_0}$$, i.e. $i$th row of $$\mathbf{A}$$ belongs to $C_1$)
+- $$\mathbf{cut}(C_0, C_1) \equiv \sum_{i \in C_0, j \in C_1} a_{ij}$$: the *cut* of the clusters $$C_0$$ and $$C_1$$
+- $$\mathbf{vol}(C_0) \equiv \sum_{i \in C_0}d_i$$, where $$d_i = \sum_{j = 1}^n a_{ij}$$: the $$i$$th row sum of $$A$$
 
 
-A pair of clusters $C_0$ and $C_1$ is considered to be a "good" partition of the data when $N_{\mathbf{A}}(C_0, C_1)$ is small. To see why, let's look at each of the two factors in this objective function separately. 
 
 #### B.1 Compute The Cut Term
 
-The cut term $\mathbf{cut}(C_0, C_1)$ is the sum of the entries `A[i,j]` where `i` and `j` belong to different clusters.
+The cut term $$\mathbf{cut}(C_0, C_1)$$ is the sum of the entries `A[i,j]` where `i` and `j` belong to different clusters.
 
 
 ```python
@@ -205,7 +204,7 @@ print(cut_obj_random_labels)
 
 #### B.2 Compute The Volume Term 
 
-The volume term $\mathbf{vol}(C_0)$ measures the size of a of cluster.
+The volume term $$\mathbf{vol}(C_0)$$ measures the size of a of cluster.
 
 
 ```python
@@ -250,12 +249,12 @@ Now we aim to show that
 
 $$\mathbf{N}_{\mathbf{A}}(C_0, C_1) = \frac{\mathbf{z}^T (\mathbf{D} - \mathbf{A})\mathbf{z}}{\mathbf{z}^T\mathbf{D}\mathbf{z}}\;$$
 
-and also check the identity $\mathbf{z}^T\mathbf{D}\mathbb{1} = 0$
+and also check the identity $$\mathbf{z}^T\mathbf{D}\mathbb{1} = 0$$
 
 In the above expression,
-- $\mathbf{D}$: the diagonal matrix with nonzero entries $d_{ii} = d_i$
-- $\mathbb{1}$: the vector of `n` ones (i.e. `np.ones(n)`)
-- $\mathbf{z}$: a new vector $\mathbf{z} \in \mathbb{R}^n$ such that: 
+- $$\mathbf{D}$$: the diagonal matrix with nonzero entries $$d_{ii} = d_i$$
+- $$\mathbb{1}$$: the vector of `n` ones (i.e. `np.ones(n)`)
+- $$\mathbf{z}$$: a new vector $$\mathbf{z} \in \mathbb{R}^n$$ such that: 
 
 $$
 z_i = 
@@ -343,9 +342,9 @@ Part C shows that the problem of minimizing the normcut objective can be transfe
 
 $$ R_\mathbf{A}(\mathbf{z})\equiv \frac{\mathbf{z}^T (\mathbf{D} - \mathbf{A})\mathbf{z}}{\mathbf{z}^T\mathbf{D}\mathbf{z}} $$
 
-subject to the condition $\mathbf{z}^T\mathbf{D}\mathbb{1} = 0$.
+subject to the condition $$\mathbf{z}^T\mathbf{D}\mathbb{1} = 0$$.
 
-We can handle the condition by substituting for $\mathbf{z}$ the orthogonal complement of $\mathbf{z}$ relative to $\mathbf{D}\mathbf{1}$.
+We can handle the condition by substituting for $$\mathbf{z}$$ the orthogonal complement of $$\mathbf{z}$$ relative to $$\mathbf{D}\mathbf{1}$$.
 
 
 ```python
@@ -361,7 +360,7 @@ def orth_obj(z):
     return (z_o @ (D - A) @ z_o)/(z_o @ D @ z_o)
 ```
 
-Use the function `scipy.optimize.minimize` to minimize the function `orth_obj` with respect to $\mathbf{z}$.
+Use the function `scipy.optimize.minimize` to minimize the function `orth_obj` with respect to $$\mathbf{z}$$.
 
 
 ```python
@@ -407,7 +406,7 @@ Our objective is to minimize the function
 
 $$ R_\mathbf{A}(\mathbf{z})\equiv \frac{\mathbf{z}^T (\mathbf{D} - \mathbf{A})\mathbf{z}}{\mathbf{z}^T\mathbf{D}\mathbf{z}} $$
 
-with respect to $\mathbf{z}$, subject to the condition $\mathbf{z}^T\mathbf{D}\mathbb{1} = 0$.
+with respect to $$\mathbf{z}$$, subject to the condition $$\mathbf{z}^T\mathbf{D}\mathbb{1} = 0$$.
 
 This is equivalent to find the smallest eigenvalue of the generalized eigenvalue problem below according to the Rayleigh-Ritz Theorem.
 
@@ -417,14 +416,14 @@ This generalized eigenvalue problem is, again, equivalent to the standard eigenv
 
 $$ \mathbf{D}^{-1}(\mathbf{D} - \mathbf{A}) \mathbf{z} = \lambda \mathbf{z}\;, \quad \mathbf{z}^T\mathbb{1} = 0\;$$
 
-And since $\mathbb{1}$ is the eigenvector with smallest eigenvalue of the matrix $\mathbf{D}^{-1}(\mathbf{D} - \mathbf{A})$, the vector $\mathbf{z}$ that minimizes the above function must be the eigenvector with the second-smallest eigenvalue. 
+And since $$\mathbb{1}$$ is the eigenvector with smallest eigenvalue of the matrix $$\mathbf{D}^{-1}(\mathbf{D} - \mathbf{A})$$, the vector $$\mathbf{z}$$ that minimizes the above function must be the eigenvector with the second-smallest eigenvalue. 
 
 
 
 
 #### F.1 Construct the (normalized) Laplacian matrix L of the similarity matrix A
 
-$\mathbf{L} = \mathbf{D}^{-1}(\mathbf{D} - \mathbf{A})$
+$$\mathbf{L} = \mathbf{D}^{-1}(\mathbf{D} - \mathbf{A})$$
 
 
 ```python
