@@ -44,8 +44,8 @@ plt.savefig("image-100.png")
 ```
 
 
-    
-![png](output_7_0.png)
+
+![image-100.png](/images/image-100.png)
     
 
 
@@ -62,7 +62,7 @@ plt.savefig("image-101.png")
 
 
     
-![png](output_8_0.png)
+![image-101.png](/images/image-101.png)
     
 
 
@@ -82,7 +82,7 @@ plt.savefig("image-102.png")
 
 
     
-![png](output_10_0.png)
+![image-102.png](/images/image-102.png)
     
 
 
@@ -98,8 +98,8 @@ plt.savefig("image-103.png")
 ```
 
 
-    
-![png](output_12_0.png)
+
+![image-103.png](/images/image-103.png)
     
 
 
@@ -395,7 +395,7 @@ plt.savefig("image-104.png")
 
 
     
-![png](output_52_0.png)
+![image-104.png](/images/image-104.png)
     
 
 
@@ -471,7 +471,7 @@ plt.savefig("image-105.png")
 
 
     
-![png](output_61_0.png)
+![image-105.png](/images/image-105.png)
     
 
 
@@ -523,7 +523,7 @@ plt.savefig("image-106.png")
 
 
     
-![png](output_66_0.png)
+![image-106.png](/images/image-106.png)
     
 
 
@@ -543,7 +543,7 @@ plt.savefig("image-107.png")
 
 
     
-![png](output_69_0.png)
+![image-107.png](/images/image-107.png)
     
 
 
@@ -558,7 +558,7 @@ plt.savefig("image-108.png")
 
 
     
-![png](output_70_0.png)
+![image-108.png](/images/image-108.png)
     
 
 
@@ -573,7 +573,7 @@ plt.savefig("image-109.png")
 
 
     
-![png](output_71_0.png)
+![image-109.png](/images/image-109.png)
     
 
 
@@ -592,7 +592,7 @@ plt.savefig("image-110.png")
 
 
     
-![png](output_74_0.png)
+![image-110.png](/images/image-110.png)
     
 
 
@@ -609,7 +609,7 @@ plt.savefig("image-111.png")
 
 
     
-![png](output_76_0.png)
+![image-110.png](/images/image-111.png)
     
 
 
@@ -627,7 +627,7 @@ plt.savefig("image-112.png")
 
 
     
-![png](output_78_0.png)
+![image-110.png](/images/image-112.png)
     
 
 
@@ -643,7 +643,7 @@ plt.savefig("image-113.png")
 
 
     
-![png](output_79_0.png)
+![image-110.png](/images/image-113.png)
     
 
 
@@ -659,7 +659,7 @@ plt.savefig("image-114.png")
 
 
     
-![png](output_80_0.png)
+![image-110.png](/images/image-114.png)
     
 
 
@@ -675,6 +675,6 @@ plt.savefig("image-115.png")
 
 
     
-![png](output_81_0.png)
+![image-110.png](/images/image-115.png)
     
 
