@@ -106,7 +106,7 @@ two_row_visualization(train_dataset)
 
 
     
-![png](output_8_0.png)
+![png](output_18_0.png)
     
 
 
@@ -247,7 +247,7 @@ plt.legend()
 
 
     
-![png](output_20_1.png)
+![png](output_120_1.png)
     
 
 
