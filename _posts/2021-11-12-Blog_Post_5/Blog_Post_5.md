@@ -106,7 +106,7 @@ two_row_visualization(train_dataset)
 
 
     
-![png](output_18_0.png)
+![output_18_0.png](/images/output_18_0.png)
     
 
 
@@ -247,7 +247,7 @@ plt.legend()
 
 
     
-![png](output_120_1.png)
+![output_120_1.png](/images/output_120_1.png)
     
 
 
@@ -290,7 +290,8 @@ for image, _ in train_dataset.take(1):
 
 
     
-![png](output_28_0.png)
+
+![output_28_0.png](/images/output_28_0.png)
     
 
 
@@ -312,8 +313,8 @@ for image, _ in train_dataset.take(1):
 ```
 
 
-    
-![png](output_30_0.png)
+
+![output_30_0.png](/images/output_30_0.png)
     
 
 
@@ -413,7 +414,8 @@ plt.legend()
 
 
     
-![png](output_37_1.png)
+
+![output_37_1.png](/images/output_37_1.png)
     
 
 
@@ -535,7 +537,8 @@ plt.legend()
 
 
     
-![png](output_49_1.png)
+
+![output_49_1.png](/images/output_49_1.png)
     
 
 
@@ -696,7 +699,8 @@ plt.legend()
 
 
     
-![png](output_62_1.png)
+
+![output_62_1.png](/images/output_62_1.png)
     
 
 
