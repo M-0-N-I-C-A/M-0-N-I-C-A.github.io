@@ -951,8 +951,6 @@ fig = px.scatter(embedding_df,
                  size = list(np.ones(len(embedding_df))),
                  size_max = 2,
                  hover_name = "word")
-
-write_html(fig, "word_embed.html")
 ```
 {% include word_embed.html %}
 
