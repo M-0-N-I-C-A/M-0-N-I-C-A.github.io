@@ -952,7 +952,6 @@ fig = px.scatter(embedding_df,
                  size_max = 2,
                  hover_name = "word")
 
-fig.show()
 write_html(fig, "word_embed.html")
 ```
 
