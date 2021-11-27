@@ -344,7 +344,7 @@ keras.utils.plot_model(model1)
 
 
     
-![png](output_28_0.png)
+![output_28_0.png](/_posts/output_28_0.png)
     
 
 
@@ -450,8 +450,8 @@ plt.legend()
 
 
 
-    
-![png](output_31_1.png)
+
+![output_31_1.png](/_posts/output_31_1.png)
     
 
 
@@ -558,7 +558,7 @@ keras.utils.plot_model(model2)
 
 
     
-![png](output_40_0.png)
+![output_40_0.png](/_posts/output_40_0.png)
     
 
 
@@ -664,8 +664,8 @@ plt.legend()
 
 
 
-    
-![png](output_43_1.png)
+
+![output_43_1png](/_posts/output_43_1.png)
     
 
 
@@ -777,7 +777,7 @@ keras.utils.plot_model(model3)
 
 
     
-![png](output_51_0.png)
+![output_51_0png](/_posts/output_51_0.png)
     
 
 
@@ -878,7 +878,8 @@ plt.legend()
 
 
     
-![png](output_54_1.png)
+
+![output_54_1.png](/_posts/output_54_1.png)
     
 
 
