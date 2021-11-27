@@ -956,6 +956,8 @@ fig = px.scatter(embedding_df,
 
 write_html(fig, "word_embed.html")
 ```
+![output_312.png](/images/output_312.png)
+
 
 
 Since activists are usually firm on their opinions or stance, I find it quite reasonable to have activists[-0.0771, -0.0306] located closely to firm[-0.0872, -0.0326].
