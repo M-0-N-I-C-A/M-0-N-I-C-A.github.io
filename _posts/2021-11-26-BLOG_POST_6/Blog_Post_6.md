@@ -334,21 +334,7 @@ model1.summary()
     _________________________________________________________________
 
 
-
-```python
-# Plot model 1
-keras.utils.plot_model(model1)  
-```
-
-
-
-
-    
-![output_285_0.png](/images/output_285_0.png)
-    
-
-
-
+  
 
 ```python
 model1.compile(optimizer = "adam",
@@ -546,21 +532,6 @@ model2.summary()
     Trainable params: 6,074
     Non-trainable params: 0
     _________________________________________________________________
-
-
-
-```python
-# Plot model 2
-keras.utils.plot_model(model2) 
-```
-
-
-
-
-    
-![output_40_0.png](/images/output_40_0.png)
-    
-
 
 
 
