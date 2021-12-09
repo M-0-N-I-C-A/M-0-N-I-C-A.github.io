@@ -3,10 +3,9 @@ layout: post
 title: Too soon to say goodbye
 ---
 
+**Overall, what did you achieve in your project?** (Group response)
 
-**Overall, what did you achieve in your project?**
-
-
+We were able to visualize a large cardiovascular disease data set, build machine learning models, use the most performant model to predict whether an individual is at risk of cardiovascular disease given his personal data, and show the result in a webapp.
 
 **What are two aspects of your project that you are especially proud of?**
 
@@ -20,7 +19,13 @@ title: Too soon to say goodbye
 
 2) Another improvement could be to expand this prediction function to other common major diseases in addition to cardiovascular disease, since a major disease can affect the normal functionality of many organs and could potentially trigger other diseases too.
 
-**How does what you achieved compare to what you set out to do in your proposal? (if you didn't complete everything in your proposal, that's fine!)**
+**How does what you achieved compare to what you set out to do in your proposal? (if you didn't complete everything in your proposal, that's fine!)** (Group response)
+
+- We proposed to make predictions for multiple diesases but ended up focusing on cardiovascular disease
+
+- We proposed to produce a risk index that shows the level of riskiness of suffering from a certain disease but ended up with producing a binary result indicating whether a user is at risk or not.
+
+- We proposed to include several personalized infographics about a certain disease but ended up with giving textual information.
 
 **What are three things you learned from the experience of completing your project? Data analysis techniques? Python packages? Git + GitHub? Etc?**
 
@@ -36,7 +41,5 @@ Moreover, another takeaway for me is to always expect the unexpected. Our projec
 On top of working on my own project, I have also benefited from understanding others' projects. In retrospect, I am in awe of the breadth of topics and issues we as a class were able to cover. We have projects concerning social issues (echo chamber), minority difficulties (sign language interpretation), practical applications (differential equation solver, traffic monitor), leisure activities (music genre detection, movie recommendation), and finance (algo trading). This abundance speaks to the potential of data science in influencing all aspects in our lives without exception, a power that needs to be harnessed with caution. While the word "science" in data science seems to represent impartiality and objectivity, this is actually a subject prone to bias, as mentioned in the article "Dissecting racial bias in an algorithm used to manage the health of populations". 
 
 This also corresponds with the findings from my previous research project in collaboration with California Innocence Project, which aims to exonerate the wrongfully convicted based on their case materials and that project aimed to expedite their reviewing process through automation. Training word embedding models on only Wikipedia text corpus produced very different topic modeling results compared to training with additional various data corpora such as Twitter or even Law and Order TV show scripts. We found that the different literacy levels of the inmates were reflected in their writing, which in turn affected our model's judgement of their innocence. Therefore, it was crucial to mitigate racial, religious, and gender biases in the topic modeling results in order to give every inmate an equal chance regardless of their background. What we did was far from eliminating all biases at once, but I believe that the awarenss of the presence of bias is a very good starting point, which will also serve as a reminder, as we continue our journey in data science.    
-
-
 
 
